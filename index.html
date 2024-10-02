@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce product page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <main class="container">
+      <header class="header">
+        <nav class="nav-bar">
+          <div class="logo-icon-container">
+            <div class="open-icon-container">
+              <img src="images/icon-menu.svg" alt="icon open" />
+            </div>
+            <div class="logo-container" id="logo">
+              <img src="images/logo.svg" alt="logo" />
+            </div>
+          </div>
+          <ul class="nav-links">
+            <div class="close-icon-container">
+              <img src="images/icon-close.svg" alt="icon close" />
+            </div>
+            <li class="nav-link"><a href="#">Collections</a></li>
+            <li class="nav-link"><a href="#">Men</a></li>
+            <li class="nav-link"><a href="#">Women</a></li>
+            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <div class="cart-icon-container">
+            <span class="cart-count"></span>
+            <img src="images/icon-cart.svg" alt="cart icon" />
+          </div>
+          <div class="user-icon-container">
+            <img src="images/image-avatar.png" alt="user icon" />
+          </div>
+        </aside>
+      </header>
+      <div class="separation header-separation"></div>
+      <section class="cart">
+        <h4 class="cart-title">Cart</h4>
+        <div class="separation"></div>
+        <div class="cart-empty-container">
+          <p class="cart-empty-message">Your cart is empty.</p>
+        </div>
+        <aside class="cart-full-container">
+          <section class="cart-content">
+            <img
+              class="cart-thumbnail"
+              src="images/image-product-1-thumbnail.jpg"
+              alt="product thumbnail"
+            />
+            <article class="cart-content-infos">
+              <h5 class="cart-content-name">Fall Limited Edition Sneakers</h5>
+              <aside class="cart-content-price-container">
+                <span class="cart-content-unit__price">125.00</span> x
+                <span class="cart-content-quantity"></span>&nbsp;<span
+                  class="cart-content-total__price"
+                ></span>
+              </aside>
+            </article>
+            <span class="delete-icon-container">
+              <img src="images/icon-delete.svg" alt="delete icon" />
+            </span>
+          </section>
+          <button class="btn btn-checkout">Checkout</button>
+        </aside>
+      </section>
+      <section class="product-section">
+        <figure class="product-images">
+          <div class="main-image-container">
+            <img
+              class="main-image"
+              src="images/image-product-1.jpg"
+              alt="product image 1"
+            />
+          </div>
+          <aside class="thumbnails-container">
+            <img
+              class="thumbnail active"
+              id="product-1"
+              src="images/image-product-1-thumbnail.jpg"
+              alt="product thumbnail 1"
+            /><img
+              class="thumbnail"
+              id="product-2"
+              src="images/image-product-2-thumbnail.jpg"
+              alt="product thumbnail 2"
+            /><img
+              class="thumbnail"
+              id="product-3"
+              src="images/image-product-3-thumbnail.jpg"
+              alt="product thumbnail 3"
+            /><img
+              class="thumbnail"
+              id="product-4"
+              src="images/image-product-4-thumbnail.jpg"
+              alt="product thumbnail 4"
+            />
+          </aside>
+        </figure>
+        <article class="product-details">
+          <h1 class="company-name">SNEAKER COMPANY</h1>
+          <h2 class="model-name">Fall Limited Edition Sneakers</h2>
+          <p class="model-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <aside class="price-container">
+            <div class="price-section">
+              <div class="new-price">$125.00</div>
+              <div class="percentage">50%</div>
+            </div>
+            <div class="old-price">$250.00</div>
+          </aside>
+          <aside class="checkout-selector">
+            <div class="quantity-section">
+              <img class="minus" src="images/icon-minus.svg" alt="minus" />
+              <div class="quantity-text">10</div>
+              <img class="plus" src="images/icon-plus.svg" alt="plus" />
+            </div>
+            <button class="btn add-to-cart">
+              <img
+                class="cart-icon"
+                src="images/icon-cart-black.svg"
+                alt="cart"
+              />
+              Add to cart
+            </button>
+          </aside>
+        </article>
+        <aside class="change-image-buttons">
+          <div class="previous-container">
+            <img
+              src="images/icon-previous.svg"
+              alt="previous"
+              class="previous"
+            />
+          </div>
+          <div class="next-container">
+            <img src="images/icon-next.svg" alt="next" class="next" />
+          </div>
+        </aside>
+      </section>
+    </main>
+    <aside class="lightbox">
+      <aside class="change-image-buttons active">
+        <div class="previous-container">
+          <img src="images/icon-previous.svg" alt="previous" class="previous" />
+        </div>
+        <div class="next-container">
+          <img src="images/icon-next.svg" alt="next" class="next" />
+        </div>
+      </aside>
+      <div class="lightbox-overlay"></div>
+      <figure class="product-images">
+        <div class="close-icon-container">
+          <img class="close-icon" src="images/icon-close.svg" alt="close" />
+        </div>
+        <div class="main-image-container">
+          <img class="main-image" alt="product image 1" />
+        </div>
+        <aside class="thumbnails-container">
+          <img
+            class="thumbnail active"
+            data-number="1"
+            src="images/image-product-1-thumbnail.jpg"
+            alt="product thumbnail 1"
+          /><img
+            class="thumbnail"
+            data-number="2"
+            src="images/image-product-2-thumbnail.jpg"
+            alt="product thumbnail 2"
+          /><img
+            class="thumbnail"
+            data-number="3"
+            src="images/image-product-3-thumbnail.jpg"
+            alt="product thumbnail 3"
+          /><img
+            class="thumbnail"
+            data-number="4"
+            src="images/image-product-4-thumbnail.jpg"
+            alt="product thumbnail 4"
+          />
+        </aside>
+      </figure>
+    </aside>
+  </body>
+</html>
